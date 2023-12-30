@@ -1,10 +1,12 @@
 import './bootstrap';
 import {createApp} from 'vue';
-import TestVueComponent from './components/TestVueComponent.vue';
+import ContactForm from './components/ContactForm.vue';
+import Instagram from './components/Instagram.vue'
 
 const app = createApp({
     components: {
-        TestVueComponent
+        ContactForm,
+        Instagram
     }
 })
 

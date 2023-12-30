@@ -1,0 +1,60 @@
+@use './variables' as *;
+
+button {
+    height: 52px;
+    width: 100%;
+    max-width: 336px;
+    border-radius: 5px;
+    border: 0.5px solid $border;
+    color: $primary-dark;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+
+    &.primary {
+        background-color: #fff;
+
+        &:hover {
+            background-color: $primary-dark;
+            color: #fff;
+        }
+    }
+
+    &.secondary {
+        background-color: $secondary-yellow;
+
+        &:hover {
+            background-color: $primary-dark;
+            color: $secondary-yellow;
+        }
+    }
+
+    &.no-box-shadow {
+        box-shadow: none;
+    }
+}
+
+// FIXME: v navrhu je nejaky divny box-shadow u inputu a textareat
+// TODO: pouzit spravny font
+input, textarea {
+    height: 52px;
+    width: 100%;
+    max-width: 336px;
+    border-radius: 5px;
+    border: 0.5px solid $border;
+    padding-left: 1rem;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 15px;
+    font-weight: 400;
+
+    &.success {
+        border-color: $success;
+    }
+
+    &.error {
+        border-color: $error;
+    }
+
+}
