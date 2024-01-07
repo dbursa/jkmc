@@ -21,7 +21,7 @@ export default defineConfig({
     resolve: {
         alias: {
             vue: "vue/dist/vue.esm-bundler.js",
-            '@images': resolve(__dirname, 'public/img'),
+            '@images': resolve(__dirname, 'public/imgs'),
         }
     }
 });

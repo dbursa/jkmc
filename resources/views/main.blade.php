@@ -50,13 +50,24 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="waves">
+                        <img src=" {{ asset('/imgs/svg/intro_waves.svg') }}" alt="">
+                    </div>
+
+                    <!-- FIXME: pridat obrazek pro retina -->
+                    <div class="square">
+                        <img src=" {{ asset('/imgs/intro_cube.webp') }}" alt="">
+                    </div>
                 </section>
                 <section id="about">
                     <div class="container">
                         <p>Info o kusove vyrobe i vyrobe ve velkem</p>
                     </div>
                 </section>
-                <section id="work"></section>
+                <section id="work">
+                    <work-section />
+                </section>
                 <section id="contact">
                     <contact-form />
                 </section>
@@ -66,20 +77,22 @@
             </main>
 
             <footer>
-                <div class="socials">
-                    <figure>
-                        <a href="/">
-                            @include('svg.logo')
-                        </a> 
-                    </figure>
-                    <p>JKMC - frézování dřeva a plastů na CNC</p>
-                    <div class="socials">
-                        <a href="https://www.facebook.com/profile.php?id=100093443538789" target="_blank">
-                            @include('svg.facebook')
-                        </a> 
-                        <a href="https://www.instagram.com/jkmc.cz/" target="_blank">
-                            @include('svg.instagram')
-                        </a> 
+                <div class="container">
+                    <div class="socials-wrapper">
+                        <figure>
+                            <a href="/">
+                                @include('svg.logo')
+                            </a> 
+                        </figure>
+                        <p>JKMC - frézování dřeva a plastů na CNC</p>
+                        <div class="socials">
+                            <a href="https://www.facebook.com/profile.php?id=100093443538789" target="_blank">
+                                @include('svg.facebook')
+                            </a> 
+                            <a href="https://www.instagram.com/jkmc.cz/" target="_blank">
+                                @include('svg.instagram')
+                            </a> 
+                        </div>
                     </div>
                 </div>
                 <div class="copyright">

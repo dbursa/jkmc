@@ -33,7 +33,7 @@ p {
     padding: 0;
 }
 
-h1 {
+h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
@@ -88,7 +88,6 @@ button, .btn {
     }
 }
 
-// FIXME: v navrhu je nejaky divny box-shadow u inputu a textareat
 // TODO: pouzit spravny font
 input, textarea {
     height: 52px;

@@ -23,8 +23,12 @@ nav {
 
 main {
     #intro {
-        padding-top: 76px;
+        padding-top: 160px;
         padding-bottom: 37px;
+        background-image: url('../../public/imgs/intro_bcg_mob.webp');
+        background-repeat: no-repeat;
+        background-position: center -25px;
+        position: relative;
         
         .wrapper {
             padding: 0 20px;
@@ -49,6 +53,18 @@ main {
                 margin-top: 200px;
             }
         }
+
+        .waves {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .square {
+            position: absolute;
+            right: 0;
+            bottom: 175px;
+        }
     }
     #about {
         background-color: #fff;
@@ -61,17 +77,103 @@ main {
         }
     }
 
+    #work {
+        background-color: #fff;
+        padding-bottom: 36px;
+
+        h2 {
+            color: $primary-dark;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 28px;
+            width: 100%;
+            margin-bottom: 18px;
+        }
+
+        .detail-wrapper {
+            border-top: 1px solid #ddd;
+
+            .caption-wrapper {
+                padding: 12px 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 14px;
+
+                figure {
+                    align-items: center;
+                    justify-content: center;
+                    width: 14px;
+                    height: 14px;
+                    border: 1px solid #000;
+                    border-radius: 50%;
+                }
+
+                h3 {
+                    color: $primary-dark;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 11px;
+                }
+            }
+
+            &.active {
+                .caption-wrapper {
+                    figure {
+                        background-color: $secondary-yellow;
+                    }
+
+                    h3 {
+                        font-weight: 800;
+                    }
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+
+            .content {
+                display: none;
+            }
+        }
+
+    }
+
 
 }
 
 footer {
-    .socials {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .socials-wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-bottom: 34px;
 
         p {
             width: 100%;
+        }
+    }
+
+    .copyright {
+        padding-top: 16px;
+        padding-bottom: 25px;
+        color: rgba(255, 255, 255, 0.50);
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);;
+
+        a {
+            color: rgba(255, 255, 255, 0.50);
+            text-decoration: none;
         }
     }
 }
