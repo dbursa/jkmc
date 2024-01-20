@@ -1,18 +1,27 @@
 <template>
-    <form action="POST">
-        <div class="input wrapper">
-            <input type="text" name="name" class="error"/>
-            <input type="email" name="email" class="success" />
-            <input type="text" name="phone" />
-        </div>
-        
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+    <div class="container">
+        <h2>Požádat o nabídku</h2>
 
-        <div class="btn-wrapper">
-            <button class="secondary" type="submit">Odeslat</button>
-        </div>
-    </form>
+        <form action="POST">
+            <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Jméno*"/>
+                <input type="email" name="email" placeholder="E-mail*" />
+                <input type="text" name="phone" placeholder="Telefonní číslo" />
+            </div>
+            
+            <textarea name="" id="" placeholder="Text vaší zprávy*"></textarea>
+
+            <div class="mandatory">
+                <span>*Povinné pole</span>
+            </div>
+    
+            <div class="btn-wrapper">
+                <button class="secondary" type="submit"><span>Odeslat</span></button>
+            </div>
+        </form>
+    </div>
 </template>
 <script setup>
+//TODO: pridavat class error/success
     
 </script>
