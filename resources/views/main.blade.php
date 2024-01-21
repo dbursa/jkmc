@@ -24,8 +24,12 @@
                             @include('svg.logo')
                         </a>                    
                     </figure>
-                    <figure class="hamburger">
+                    <figure class="hamburger active">
                         @include('svg.hamburger')
+                    </figure>
+                    <!-- TODO: pridat opacity, kdyz se meni ikony (aby neskakaly) -->
+                    <figure class="close">
+                        @include('svg.close')
                     </figure>
                     <div class="nav-content">
                         <a href="#intro">Úvod</a>

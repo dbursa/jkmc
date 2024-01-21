@@ -13,3 +13,17 @@ const app = createApp({
 })
 
 app.mount('#app')
+
+const hamburgerNav = document.querySelector('.hamburger');
+    hamburgerNav.addEventListener('click', () => {
+    document.querySelector('.nav-content').classList.add('active');
+    document.querySelector('.close').classList.add('active');
+    hamburgerNav.classList.remove('active')
+});
+
+const closeNav = document.querySelector('.close');
+closeNav.addEventListener('click', () => {
+    document.querySelector('.nav-content').classList.remove('active');
+    document.querySelector('.close').classList.remove('active');
+    hamburgerNav.classList.add('active')
+});

@@ -3,6 +3,7 @@
 nav {
     margin-bottom: 26px;
     margin-top: 20px;
+    position: relative;
 
     .container {
         display: flex;
@@ -11,11 +12,64 @@ nav {
         align-items: center;
 
         .hamburger {
-            
-        }
-    
-        .nav-content {
             display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        .close {
+            display: none;
+
+            &.active {
+                display: flex;
+
+                svg {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+
+    // TODO: pridat transition na otevreni navbaru
+        .nav-content {
+            height: 0;
+            position: absolute;
+
+            a {
+                display: none;
+            }
+
+            &.active{
+                height: 180px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                right: 0;
+                z-index: 1;
+                bottom: -175px;
+                background: rgba(29, 29, 27);
+    
+                a {
+                    display: flex;
+                    margin-right: 20px;
+                    color: $primary-light;
+                    text-decoration: none;
+                    font-size: 20px;
+                    line-height: 1;
+    
+                    &:first-of-type {
+                        margin-top: 20px;
+                    }
+    
+                    &:last-of-type {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
         }
     }
 
