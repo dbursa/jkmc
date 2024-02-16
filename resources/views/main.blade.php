@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Frézování dřeva a plastů na CNC</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,54 +16,62 @@
 
     </head>
     <body>
-        <div id="app">
-            <nav>
-                <div class="container">
-                    <figure>
-                        <a href="/">
-                            @include('svg.logo')
-                        </a>                    
-                    </figure>
-                    <figure class="hamburger active">
-                        @include('svg.hamburger')
-                    </figure>
-                    <!-- TODO: pridat opacity, kdyz se meni ikony (aby neskakaly) -->
-                    <figure class="close">
-                        @include('svg.close')
-                    </figure>
-                    <div class="nav-content">
-                        <a href="#intro">Úvod</a>
-                        <a href="#work">Naše služby</a>
-                        <a href="#contact">Kontakty</a>
-                    </div>
-                </div>
-            </nav>
-
+        <div id="app">            
             <main>
-                <section id="intro">
-                    <div class="wrapper">                        
-                        <h1>Frézování dřeva</h1>
-                        <h1>a plastů na CNC</h1>
-    
-                        <div class="button-wrapper">                    
-                            <a href="#about" class="btn primary">
-                                <span>Zobrazit více</span>
-                            </a>
-                            <a href="#contact" class="btn secondary">
-                                <span>Kontakty</span>
-                            </a>
+                <div class="intro-nav">
+                    <nav>
+                        <div class="container">
+                            <figure>
+                                <a href="/">
+                                    @include('svg.logo')
+                                </a>                    
+                            </figure>
+                            <figure class="hamburger active">
+                                @include('svg.hamburger')
+                            </figure>
+                            <!-- TODO: pridat opacity, kdyz se meni ikony (aby neskakaly) -->
+                            <figure class="close">
+                                @include('svg.close')
+                            </figure>
+                            <div class="nav-content">
+                                <a href="#intro">Úvod</a>
+                                <a href="#work">Naše služby</a>
+                                <a href="#contact">Kontakty</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="waves">
-                        <img src=" {{ asset('/imgs/svg/intro_waves.svg') }}" alt="">
-                    </div>
-
-                    <!-- FIXME: pridat obrazek pro retina -->
-                    <div class="square">
-                        <img src=" {{ asset('/imgs/intro_cube.webp') }}" alt="">
-                    </div>
-                </section>
+                    </nav>
+                    <section id="intro">
+                        <div class="wrapper">                        
+                            <h1>Frézování dřeva</h1>
+                            <h1>a plastů na CNC</h1>
+        
+                            <div class="button-wrapper">                    
+                                <a href="#about" class="btn primary">
+                                    <span>Zobrazit více</span>
+                                </a>
+                                <a href="#contact" class="btn secondary">
+                                    <span>Kontakty</span>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="waves">
+                            <picture>
+                                <source media="(max-width: 1199.99px)" srcset="{{ asset('/imgs/svg/intro_waves.svg') }}">
+                                <source media="(min-width: 1200px)" srcset="{{ asset('/imgs/svg/intro_waves_desktop.svg') }}">
+                                <img src="{{ asset('/imgs/svg/intro_waves_desktop.svg') }}">
+                            </picture>
+                        </div>
+    
+                        <div class="square">
+                            <picture>
+                                <source media="(max-width: 1199.99px)" srcset="{{ asset('/imgs/intro_cube.webp') }}">
+                                <source media="(min-width: 1200px)" srcset="{{ asset('/imgs/intro_cube@2x.webp') }}">
+                                <img src="{{ asset('/imgs/intro_cube@2x.webp') }}" alt="">
+                            </picture>
+                        </div>
+                    </section>
+                </div>
                 <section id="about">
                     <div class="container">
                         <p>Info o kusove vyrobe i vyrobe ve velkem</p>
