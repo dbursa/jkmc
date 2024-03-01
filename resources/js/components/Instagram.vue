@@ -11,8 +11,12 @@
                 disableOnInteraction: false,
                 stopOnLastSlide: true
             }"
-        >
-        
+            :breakpoints="{ 
+                1200: { 
+                    spaceBetween: 17,
+                },
+            }"
+        >        
         
         <!-- TODO: napojit instagram + pridat fotky  -->
             <swiper-slide>

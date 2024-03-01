@@ -126,9 +126,11 @@ input, textarea {
 
 .container {
     max-width: 1700px;
+    width: 100%;
     padding: 0 20px;
     margin-right: auto;
     margin-left: auto;
+    box-sizing: border-box;
 
     @media screen and (min-width: $pc) {
         padding: 0 100px;

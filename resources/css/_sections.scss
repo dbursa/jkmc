@@ -442,6 +442,17 @@ main {
                 }
             }
         }
+
+        @media screen and (min-width: $pc) {
+            padding: 53px 0;
+
+            .swiper {
+                .swiper-slide {
+                    height: 505px;
+                    width: 505px;
+                }
+            }
+        }
     }
 }
 
@@ -461,8 +472,14 @@ footer {
 
         figure {
             order: 1;
+
             a {
                 display: flex;
+
+                svg {
+                    width: 64px;
+                    height: 64px;
+                }
             }
         }
 
@@ -490,6 +507,35 @@ footer {
         a {
             color: rgba(255, 255, 255, 0.50);
             text-decoration: none;
+        }
+    }
+
+    @media screen and (min-width: $pc) {
+        padding-top: 42px;
+
+        .socials-wrapper {
+            padding-bottom: 53px;
+            flex-wrap: nowrap;
+            gap: 36px;
+            justify-content: initial;
+
+            p {
+                order: 2;
+                width: 215px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .socials {
+                order: 3;
+                margin-left: auto;
+            }
+        }
+
+        .copyright {
+            font-size: 18px;
+            padding-top: 23px;
+            padding-bottom: 50px;
         }
     }
 }
