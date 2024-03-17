@@ -80,28 +80,34 @@
                 <section id="work">
                     <work-section />
                 </section>
-                <section id="contact">
-                    <div class="contact-wrapper">
-                        <h2>Kontakty</h2>
-                        
-                        <div class="text-wrapper">
-                            <div class="address">
-                                <p>Jaroslav Kobrle</p>
-                                <p>Vlastibořice - Jivina 56/46344</p>
-                                <a href="tel:+420 777 248 802">+420 777 248 802</a>
-                                <a href="mailto:jaroslav.kobrle@jkmc.cz">jaroslav.kobrle@jkmc.cz</a>
+
+                <div class="form-contact-wrapper">
+                    <div class="container">
+                        <section id="contact">
+                            <div class="contact-wrapper">
+                                <h2>Kontakty</h2>
+                                
+                                <div class="text-wrapper">
+                                    <div class="address">
+                                        <p>Jaroslav Kobrle</p>
+                                        <p>Vlastibořice - Jivina 56/46344</p>
+                                        <a href="tel:+420 777 248 802">+420 777 248 802</a>
+                                        <a href="mailto:jaroslav.kobrle@jkmc.cz">jaroslav.kobrle@jkmc.cz</a>
+                                    </div>
+                                    <div class="ico">
+                                        <p>IČ: 05755263</p>
+                                        <p>DIČ: CZ8112102592</p>
+                                    </div>
+                                </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1641.1687554280081!2d15.059236439032215!3d50.62659546859247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sVlastibo%C5%99ice%20-%20Jivina%2056%2F46344!5e0!3m2!1sen!2see!4v1705139013161!5m2!1sen!2see" width="100%" height="375" style="border:0; filter:grayscale(100%)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
-                            <div class="ico">
-                                <p>IČ: 05755263</p>
-                                <p>DIČ: CZ8112102592</p>
-                            </div>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1641.1687554280081!2d15.059236439032215!3d50.62659546859247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sVlastibo%C5%99ice%20-%20Jivina%2056%2F46344!5e0!3m2!1sen!2see!4v1705139013161!5m2!1sen!2see" width="100%" height="375" style="border:0; filter:grayscale(100%)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </section>
+                        <section id="form">
+                            <contact-form />
+                        </section>
                     </div>
-                </section>
-                <section id="form">
-                    <contact-form />
-                </section>
+                </div>
+
                 <section id="instagram">
                     <instagram />
                 </section>

@@ -41,8 +41,13 @@ h2 {
     font-weight: 400;
     line-height: 28px;
     width: 100%;
+
+    @media screen and (min-width: $pc) {
+        font-size: 35px;
+    }
 }
 
+// TODO: zmenit border color podle typu buttonu (na hover budou stejne)
 button, .btn {
     display: flex;
     justify-content: center;
@@ -109,6 +114,7 @@ input, textarea {
     transition: all 0.4s ease-out;
     box-sizing: border-box;
     resize: none;
+    background: transparent;
 
     &:focus-visible {
         outline: none;
@@ -121,7 +127,14 @@ input, textarea {
     &.error {
         border-color: $error;
     }
+}
 
+@media screen and (min-width: $pc) {
+    textarea {
+        height: 100%;
+        padding-top: 16px;
+        max-width: 500px;
+    }
 }
 
 .container {
@@ -133,6 +146,6 @@ input, textarea {
     box-sizing: border-box;
 
     @media screen and (min-width: $pc) {
-        padding: 0 100px;
+        padding: 0 80px;
     }
 }

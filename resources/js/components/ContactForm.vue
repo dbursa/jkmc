@@ -1,15 +1,17 @@
 <template>
-    <div class="container">
+    <div>
         <h2>Požádat o nabídku</h2>
 
         <form action="POST">
-            <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Jméno*"/>
-                <input type="email" name="email" placeholder="E-mail*" />
-                <input type="text" name="phone" placeholder="Telefonní číslo" />
+            <div class="form-container">
+                <div class="input-wrapper">
+                    <input type="text" name="name" placeholder="Jméno*"/>
+                    <input type="email" name="email" placeholder="E-mail*" />
+                    <input type="text" name="phone" placeholder="Telefonní číslo" />
+                </div>
+                
+                <textarea name="" id="" placeholder="Text vaší zprávy*"></textarea>
             </div>
-            
-            <textarea name="" id="" placeholder="Text vaší zprávy*"></textarea>
 
             <div class="mandatory">
                 <span>*Povinné pole</span>
