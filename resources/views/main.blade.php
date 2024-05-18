@@ -30,6 +30,7 @@
                                 @include('svg.hamburger')
                             </figure>
                             <!-- TODO: pridat opacity, kdyz se meni ikony (aby neskakaly) -->
+                            {{-- TODO: pridat sipku na mobilni zarizeni (absolutne vpravo dole) --}}
                             <figure class="close">
                                 @include('svg.close')
                             </figure>
@@ -55,13 +56,13 @@
                             </div>
                         </div>
     
-                        <div class="waves">
+                        {{-- <div class="waves">
                             <picture>
                                 <source media="(max-width: 1199.99px)" srcset="{{ asset('/imgs/svg/intro_waves.svg') }}">
                                 <source media="(min-width: 1200px)" srcset="{{ asset('/imgs/svg/intro_waves_desktop.svg') }}">
                                 <img src="{{ asset('/imgs/svg/intro_waves_desktop.svg') }}">
                             </picture>
-                        </div>
+                        </div> --}}
     
                         <div class="square">
                             <picture>
@@ -74,7 +75,7 @@
                 </div>
                 <section id="about">
                     <div class="container">
-                        <p>Info o kusove vyrobe i vyrobe ve velkem</p>
+                        <p>"Tady ude nejake info alespon na dva radky o kusove vyrobe nebo nejaky hezky firemni slogan, ktery se pouziva."</p>
                     </div>
                 </section>
                 <section id="work">
