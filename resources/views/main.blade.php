@@ -29,8 +29,6 @@
                             <figure class="hamburger active">
                                 @include('svg.hamburger')
                             </figure>
-                            <!-- TODO: pridat opacity, kdyz se meni ikony (aby neskakaly) -->
-                            {{-- TODO: pridat sipku na mobilni zarizeni (absolutne vpravo dole) --}}
                             <figure class="close">
                                 @include('svg.close')
                             </figure>
@@ -55,14 +53,6 @@
                                 </a>
                             </div>
                         </div>
-    
-                        {{-- <div class="waves">
-                            <picture>
-                                <source media="(max-width: 1199.99px)" srcset="{{ asset('/imgs/svg/intro_waves.svg') }}">
-                                <source media="(min-width: 1200px)" srcset="{{ asset('/imgs/svg/intro_waves_desktop.svg') }}">
-                                <img src="{{ asset('/imgs/svg/intro_waves_desktop.svg') }}">
-                            </picture>
-                        </div> --}}
     
                         <div class="square">
                             <picture>
@@ -138,6 +128,13 @@
                     <a href="/">www.jkmc.cz</a>
                 </div>
             </footer>
+            <div class="arrow-up">
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                      </svg>                  
+                </figure>
+            </div>
         </div>
     </body>
 </html>

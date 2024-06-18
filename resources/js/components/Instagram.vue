@@ -179,10 +179,10 @@
     setup() {
         // TODO: tyhle veci asi nebudou potreba
       const onSwiper = (swiper) => {
-        console.log(swiper);
+        // console.log(swiper);
       };
       const onSlideChange = () => {
-        console.log('slide change');
+        // console.log('slide change');
       };
       return {
         onSwiper,

@@ -14,8 +14,7 @@ body, html {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    letter-spacing: -0.084px; 
-    overflow-x: hidden;
+    letter-spacing: -0.084px;
     scroll-behavior: smooth;
 }
 
@@ -39,13 +38,18 @@ h1, h2, h3 {
 h2 {
     color: $primary-dark;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 28px;
     width: 100%;
 
     @media screen and (min-width: $pc) {
         font-size: 35px;
     }
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
 }
 
 // TODO: zmenit border color podle typu buttonu (na hover budou stejne)

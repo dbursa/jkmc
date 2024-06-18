@@ -29,3 +29,18 @@ closeNav.addEventListener('click', () => {
 });
 
 //TODO: zavrit navbar kdyz na mobilnim zarizeni na neco kliknu
+
+
+
+const arrowUp = document.querySelector('.arrow-up');
+arrowUp.addEventListener('click', () => {
+    window.scrollTo(0,0);
+});
+    
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+        arrowUp.classList.add('show');
+    } else {
+        arrowUp.classList.remove('show');
+    }
+}, true);
