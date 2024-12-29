@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <title>Frézování dřeva a plastů na CNC</title>
 
@@ -20,7 +20,7 @@
             <main>
                 <div class="intro-nav">
                     <nav>
-                        <div class="container">
+                        <div class="container-jkmc">
                             <figure>
                                 <a href="/">
                                     @include('svg.logo')
@@ -45,10 +45,10 @@
                             <h1>a plastů na CNC</h1>
         
                             <div class="button-wrapper">                    
-                                <a href="#about" class="btn primary">
+                                <a href="#about" class="btn-jkmc primary">
                                     <span>Zobrazit více</span>
                                 </a>
-                                <a href="#contact" class="btn secondary">
+                                <a href="#contact" class="btn-jkmc secondary">
                                     <span>Kontakty</span>
                                 </a>
                             </div>
@@ -64,7 +64,7 @@
                     </section>
                 </div>
                 <section id="about">
-                    <div class="container">
+                    <div class="container-jkmc">
                         <p>"Tady ude nejake info alespon na dva radky o kusove vyrobe nebo nejaky hezky firemni slogan, ktery se pouziva."</p>
                     </div>
                 </section>
@@ -73,7 +73,7 @@
                 </section>
 
                 <div class="form-contact-wrapper">
-                    <div class="container">
+                    <div class="container-jkmc">
                         <section id="contact">
                             <div class="contact-wrapper">
                                 <h2>Kontakty</h2>
@@ -105,7 +105,7 @@
             </main>
 
             <footer>
-                <div class="container">
+                <div class="container-jkmc">
                     <div class="socials-wrapper">
                         <figure>
                             <a href="/">

@@ -12,7 +12,7 @@ main {
             padding-top: 20px;
             position: relative;
 
-            .container {
+            .container-jkmc {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -94,6 +94,7 @@ main {
 
             .wrapper {
                 padding: 0 20px;
+                box-sizing: initial;
 
                 h1 {
                     font-size: 35px;
@@ -156,7 +157,7 @@ main {
             nav {
                 padding-bottom: 0;
 
-                .container {
+                .container-jkmc {
                     .hamburger,
                     .close {
                         display: none;
@@ -287,129 +288,8 @@ main {
             margin-bottom: 32px;
         }
 
-        .work-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            overflow: hidden;
-
-            .work-navbar {
-                width: 100%;
-                overflow: hidden;
-
-                .scroll-container {
-                    display: flex;
-                    overflow-x: auto;
-                    scrollbar-width: none;
-
-                    &::-webkit-scrollbar {
-                        display: none;
-                    }
-
-                    > ul {
-                        display: flex;
-                        padding: 0;
-                        margin: 0;
-                        list-style: none;
-
-                        li {
-                            flex: none;
-                            padding: 10px 24px;
-                            white-space: nowrap;
-                            border-bottom: 3px solid $primary-light;
-                            font-size: 18px;
-                            cursor: pointer;
-
-                            &.active, &:hover {
-                                border-color: $secondary-yellow;
-                                background: $secondary-yellow;
-                                font-weight: 500;
-                                position: relative;
-
-                                &::after {
-                                    content: "";
-                                    position: absolute;
-                                    top: 0;
-                                    right: -22px;
-                                    width: 0;
-                                    height: 0;
-                                    border-top: 22.5px solid transparent;
-                                    border-bottom: 22.5px solid transparent;
-                                    border-left: 22.5px solid $secondary-yellow;
-
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .work-content-wrapper {
-                .content {
-                    display: none;
-
-                    &.active {
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                    &.work-content-1 {
-                        .description {
-                            > p {
-                                font-size: 14px;
-
-                                &:first-of-type {
-                                    margin-bottom: 32px;
-                                }
-
-                                &:nth-of-type(2) {
-                                    margin-top: 16px;
-                                }
-
-                                &:nth-of-type(3) {
-                                    margin-top: 8px;
-                                    margin-bottom: 32px;
-                                }
-                            }
-
-                            > span {
-                                font-weight: 500;
-                            }
-
-                            > ul {
-                                list-style: disc;
-                                padding-left: 32px;
-                                margin-top: 20px;
-
-                                li {
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         @media screen and (min-width: $pc) {
             padding-bottom: 72px;
-    
-            .work-wrapper {
-                .work-content-wrapper {
-                    .content {
-                        &.active {
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        &.work-content-1 {
-                            .description {
-                                width: 50%;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -637,7 +517,7 @@ main {
                 #fff 55%
             );
 
-            .container {
+            .container-jkmc {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;

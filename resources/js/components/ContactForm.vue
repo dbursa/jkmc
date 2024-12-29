@@ -18,7 +18,7 @@
             </div>
     
             <div class="btn-wrapper">
-                <button class="secondary" type="submit"><span>Odeslat</span></button>
+                <button class="secondary btn-jkmc" type="submit"><span>Odeslat</span></button>
             </div>
         </form>
     </div>
