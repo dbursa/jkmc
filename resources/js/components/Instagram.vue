@@ -18,7 +18,6 @@
             }"
         >        
         
-        <!-- TODO: napojit instagram + pridat fotky  -->
             <swiper-slide>
                 <a href="https://www.instagram.com/jkmc.cz/" target="_blank" class="hover">
                     <figure>

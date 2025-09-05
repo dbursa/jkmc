@@ -66,7 +66,7 @@
                 </div>
                 <section id="about">
                     <div class="container-jkmc">
-                        <p>"Tady ude nejake info alespon na dva radky o kusove vyrobe nebo nejaky hezky firemni slogan, ktery se pouziva."</p>
+                        <p>"Nabízíme profesionální CNC obrábění dřeva a plastu na míru."</p>
                     </div>
                 </section>
                 <section id="work">
