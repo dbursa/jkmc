@@ -45,7 +45,6 @@ main {
                     }
                 }
 
-                // TODO: pridat transition na otevreni navbaru
                 .nav-content {
                     height: 0;
                     position: absolute;
@@ -418,6 +417,7 @@ main {
         #form {
             padding-top: 36px;
             padding-bottom: 29px;
+            max-width: 623px;
 
             > div {
                 h2 {
@@ -462,6 +462,42 @@ main {
                             font-size: 15px;
                             font-style: italic;
                             margin-left: 17px;
+                        }
+                    }
+
+                    .note-wrapper {
+                        width: 100%;
+                        margin-top: 26px;
+
+                        .note {
+                            padding: 16px 32px;
+                            border-radius: 5px;
+                            font-size: 15px;
+                            line-height: 1.4;
+                            width: 100%;
+                            max-width: 336px;
+                            text-align: center;
+    
+                            &--success {
+                                background-color: #e6f7e6;
+                                color: #2d7a2d;
+                                border: 1px solid #2d7a2d;
+                            }
+    
+                            &--error {
+                                background-color: #fdeaea;
+                                color: #a12d2d;
+                                border: 1px solid #a12d2d;
+                            }
+    
+                            ul {
+                                padding: 0;
+                                margin: 0;
+    
+                                li {
+                                    text-align: left;
+                                }
+                            }
                         }
                     }
 
@@ -591,6 +627,7 @@ main {
                     align-items: center;
                     justify-content: center;
                     text-decoration: none;
+                    transition: opacity 0.3s ease, background 0.3s ease;
 
                     p {
                         color: #fff;
@@ -599,7 +636,6 @@ main {
                         text-align: center;
                     }
 
-                    // TODO: pridat hezke transition na opacity
                     &:hover {
                         opacity: 1;
                         height: 100%;

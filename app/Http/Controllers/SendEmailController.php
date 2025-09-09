@@ -11,7 +11,7 @@ class SendEmailController extends Controller
     public function __invoke(Request $request)
     {
         $data = $request->validate([
-            'name'    => 'required|string|max:255',
+            'first_name'    => 'required|string|max:255',
             'email'   => 'required|email',
             'phone'   => 'nullable|string|max:50',
             'message' => 'required|string',

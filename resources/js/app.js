@@ -34,9 +34,6 @@ closeNav.addEventListener('click', () => {
     hamburgerNav.classList.add('active')
 });
 
-//TODO: zavrit navbar kdyz na mobilnim zarizeni na neco kliknu
-
-
 
 const arrowUp = document.querySelector('.arrow-up');
 arrowUp.addEventListener('click', () => {

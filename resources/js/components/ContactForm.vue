@@ -18,19 +18,19 @@
       </div>
 
       <!-- Success & error messages -->
-      <div v-if="successMessage">
-        {{ successMessage }}
-        <!-- TODO: dostylovat -->
-      </div>
-
-      <div v-if="errorMessages.length">
-        <ul>
-          <li v-for="(msg, index) in errorMessages" :key="index">
-            {{ msg }}
-          </li>
-        </ul>
-        <!-- TODO: dostylovat -->
-      </div>
+       <div v-if="successMessage || errorMessages.length" class="note-wrapper">
+         <div class="note note--success" v-if="successMessage">
+           <ul>
+             <li>{{ successMessage }}</li>
+           </ul>
+         </div>
+   
+         <div class="note note--error" v-if="errorMessages.length">
+           <ul>
+             <li v-for="(msg, index) in errorMessages" :key="index">{{ msg }}</li>
+           </ul>
+         </div>
+       </div>
 
       <div class="btn-wrapper">
         <button class="secondary btn-jkmc" type="submit" :disabled="loading">

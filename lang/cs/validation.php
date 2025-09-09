@@ -122,7 +122,7 @@ return [
     'prohibited_unless' => 'Pole :attribute je zakázáno, pokud není rok :other v roce :values.',
     'prohibits' => 'Pole :attribute zakazuje přítomnost :other.',
     'regex' => ':Attribute nemá správný formát.',
-    'required' => ':Attribute musí být vyplněno.',
+    'required' => 'Pole :Attribute musí být vyplněno.',
     'required_array_keys' => 'Pole :attribute musí obsahovat položky pro: :values.',
     'required_if' => ':Attribute musí být vyplněno pokud :other je :value.',
     'required_if_accepted' => 'Pole :attribute je povinné, pokud je přijato :other.',
