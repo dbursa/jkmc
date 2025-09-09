@@ -11,13 +11,13 @@ class SendEmailController extends Controller
     public function __invoke(Request $request)
     {
         $data = $request->validate([
-            'first_name'    => 'required|string|max:255',
+            'name'    => 'required|string|max:255',
             'email'   => 'required|email',
             'phone'   => 'nullable|string|max:50',
             'message' => 'required|string',
         ]);
 
-        Mail::to('vrerabek@gmail.com')->send(new RequestOfferMail($data));
+        Mail::to('jaroslav.kobrle@jkmc.cz')->send(new RequestOfferMail($data));
 
         return response()->json(['status' => 'success']);
     }

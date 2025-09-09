@@ -175,6 +175,7 @@ return [
         'excerpt' => 'výňatek',
         'filter' => 'filtr',
         'first_name' => 'jméno',
+        'name' => 'jméno',
         'gender' => 'Rod',
         'group' => 'skupina',
         'hour' => 'hodina',
